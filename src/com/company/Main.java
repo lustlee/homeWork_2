@@ -10,6 +10,7 @@ public class Main {
         System.out.println(guestTemperature(66, -44));
         System.out.println(guestTemperature(85, 64));
         System.out.println(guestTemperature(85, 64));
+        //System.out.println(guestTemperature(generateRandomAge(), 33));
 
     }
 
@@ -24,7 +25,16 @@ public class Main {
         } else {
             return "Оставайтесь дома";
         }
-        
-    }
 
+    }
+    //ДЗ на сообразительность:
+    //Написать метод в котором генерируется случайный возраст public static int generateRandomAge(){........}
+    //При вызове метода, который формирует результат “можно ли идти гулять”
+    // использовать генерирование случайного возраста с помощью метода “generateRandomAge”
+
+    public static int generateRandomAge(String[] args) {
+        int a = (int) (Math.random() * (200 + 1)) - 100;
+        System.out.println(a);
+        return a;
+    }
 }
